@@ -1,57 +1,66 @@
+@font-face{
+  font-family: 'Satoshi-Variable';
+  src: url(font/Satoshi-Variable.ttf);
+
+}
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: rgb(255, 255, 255);
+   background-color: #0B0B0B;
+  
 }
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
 }
-.bland{
-    mix-blend-mode: screen;
-}
+
 .header1{
-    mix-blend-mode: difference;
-    height: 100px;
+    
+    height: 50px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 0 5%;
     align-items: center;
-    color: white;
+    color: #F2F2F2;
     font-family: sans-serif;
     position: sticky;
     top: 0;
     z-index: 9999; 
+    font-size: 20px;
+    
 }
 a{
+  
     text-decoration: none;
-    color: white;
+    color: #F2F2F2;
     margin: 0 15px;
 }
 .footer1{
-    background-color: rgb(0, 255, 94);
+    background-color: #0B0B0B;
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-around;
 }
 .main1{
-    background-color: rgb(225, 255, 0);
+    background-color: #0B0B0B;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    flex-grow: 1;
+    height: 90%;
 }
 .main2{
-    background-color: rgb(83, 79, 130);
+    background-color: #0B0B0B;
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-grow: 1;
 }
 .footer2{
-    background-color: rgb(0, 255, 94);
+    background-color: #0B0B0B;
     width: 100%;
     height: 200px;
     display: flex;
@@ -59,7 +68,7 @@ a{
     
 }
 #div1{
-    background-color: aqua;
+    background-color: #0B0B0B;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -67,60 +76,100 @@ a{
     
 }
 #div2{ 
-    background-color: rgb(83, 79, 130);
+    background-color: #0B0B0B;
     width: 100%;
     height: 100vh;
+    scroll-snap-align: start;
 }
 #div3{ 
-    background-color: rgb(225, 255, 0);
+    background-color: #0B0B0B;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 #div4{ 
-    background-color: rgb(21, 0, 255);
+    background-color: #0B0B0B;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: space-around;
-   
-    
-    
-    
-}
-#div7{ 
-    background-color: rgb(83, 79, 130);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
+   background-image: url(6706c440-63e8-4b57-8109-5c3f307fce3e.png);
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+
+  
 }
 #div5{ 
-    background-color: rgb(83, 79, 130);
+    background-color: #0B0B0B;
     width: 40%;
     font-size: 100px;
     display: flex;
     align-items: center;
     font-family: sans-serif;
     font-weight: bold;
+    color: #F2F2F2;
 }
 #div6{ 
-    background-color: rgb(83, 79, 130);
+    background-color: #0B0B0B;
     width: 100%;
     align-items: center;
     display: flex;
     text-align: left;
     font-size: 20px;
     font-family: sans-serif;
-    
-    
+    color: #B1B1B1;
 }
+#div8{ 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+#div9{
+    background-color: #0B0B0B;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+.topPhotoBG{ 
+    background-color: #0B0B0B;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+   background-image:  url(6706c440-63e8-4b57-8109-5c3f307fce3e.png);
+    background-size: contain;
+    background-position: center;
+    animation: fade both 1s ease;
+    animation-timeline: view(70% 5%);
+    background-attachment: fixed;
+}
+#butomPhotoBG{ 
+    background-color: #0B0B0B;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+   background-image: url(6706c440-63e8-4b57-8109-5c3f307fce3e.png);
+    background-size: contain;
+    background-position: center;
+   
+    
+
+  
+}
+
 
 img{
     width: 100%;
     height: 100vh;
 }
+
+
+
 #v1{
     width: 100%;
     height: 100vh;
@@ -137,7 +186,7 @@ img{
     height: 100%;
     object-fit: cover;
     display: block;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .show1{
     animation: a1 both 1s ease;
@@ -148,7 +197,7 @@ img{
   60% {scale: 100%;
     transform: translate(0%, 0%);}
   100% {
-    scale: 70%;
+    scale: 80%;
     transform: translate(0%, 100%);
 
 }
@@ -158,6 +207,7 @@ img{
     animation: video1 both 1s ease;
     animation-timeline: view(20% 5%);
     
+
 }
 @keyframes video1{
   0%{
@@ -170,6 +220,42 @@ img{
   }
 }
 
+
+.slide_R{
+    animation: slide_R 2s cubic-bezier(0.15, 0.9, 0.25, 1) both;
+    animation-timeline: view(20% 5%);
+
+}
+.slide_L{
+    animation: slide_L 2s cubic-bezier(0.15, 0.9, 0.25, 1) both;
+    animation-timeline: view(20% 5%);
+    
+   
+
+}
+@keyframes slide_L{
+  from{
+    
+    transform: translate(-100%, 0%);
+  }
+  to {
+    
+
+    transform: translate(0%, 0%);}
+
+}
+@keyframes slide_R{
+  from{
+    
+    transform: translate(100%, 0%);
+  }
+  to {
+    
+    transform: translate(0%, 0%);}
+
+}
+
+
 .showText{
     animation: a2 both 1s ease;
     animation-timeline: view(70% 5%);
@@ -180,7 +266,7 @@ img{
     transform: translate(-50%, 0%);}
   100% {
     opacity: 100%;
-    transform: translate(0%, 0%);
+    transform: translate(10%, 0%);
 
 }
 }
@@ -204,6 +290,7 @@ img{
 
 @media (max-width: 768px) {
 .showParagraph{
+  
     animation: a3 both linear;
     animation-timeline: view(70% 5%);
 }
@@ -233,8 +320,19 @@ img{
     font-size: 1.5rem;
     
   }
-
-  
+  #placeholder1{
+    scale: 10px;
+  }
+  #div8{
+    margin-top: 320px;
+    width: 50%;
+    height: 50%;
+    flex-direction: column;
+  }
+  #v3{
+      width: 100px;
+      height: 100px;
+  }
 
 }
 
@@ -246,20 +344,48 @@ img{
   align-self: center;
   border-radius: 30px;
   margin-left: 50px;
+ 
   
 }
-
+.text1{
+   font-family: "Satoshi-Variable" , sans-serift;
+  font-size: 32px;
+  font-weight: bold;
+  color: #F2F2F2;
+}
+.text2{
+   font-family: "Satoshi-Variable" , sans-serift;
+  font-size: 20px;
+  color: #B1B1B1;
+  
+}
 #TextPlaceholder1{
-  background-color: rgb(98, 92, 107);
+  
   height: 400px;
   width: 500px;
    align-self: center;                           
   align-content: center;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 30px;
+ 
   
   
   
   
+}
+
+
+#cursor{
+  height: 50px;
+  width: 50px;
+   z-index: 9999; 
+   border-radius: 50px;
+   background-color: rgb(255, 255, 255);
+   position: fixed;
+   pointer-events: none;
+
+   scale: 5px;
+   transition: opacity 500ms, scale 500ms;
+}
+body:hover{
+  opacity: 1;
+  scale: 50px;
 }
