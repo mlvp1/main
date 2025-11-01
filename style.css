@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 255);
+}
+html {
+  scroll-behavior: smooth;
+}
+.bland{
+    mix-blend-mode: screen;
+}
+.header1{
+    mix-blend-mode: difference;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5%;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 9999; 
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+}
+.footer1{
+    background-color: rgb(0, 255, 94);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.main1{
+    background-color: rgb(225, 255, 0);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.main2{
+    background-color: rgb(83, 79, 130);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.footer2{
+    background-color: rgb(0, 255, 94);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    
+}
+#div1{
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+#div2{ 
+    background-color: rgb(83, 79, 130);
+    width: 100%;
+    height: 100vh;
+}
+#div3{ 
+    background-color: rgb(225, 255, 0);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#div4{ 
+    background-color: rgb(21, 0, 255);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+   
+    
+    
+    
+}
+#div7{ 
+    background-color: rgb(83, 79, 130);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+#div5{ 
+    background-color: rgb(83, 79, 130);
+    width: 40%;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#div6{ 
+    background-color: rgb(83, 79, 130);
+    width: 100%;
+    align-items: center;
+    display: flex;
+    text-align: left;
+    font-size: 20px;
+    font-family: sans-serif;
+    
+    
+}
+
+img{
+    width: 100%;
+    height: 100vh;
+}
+#v1{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+#v2{
+    width: 50%;
+    height: 50%;
+
+}
+#v3{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
+}
+.show1{
+    animation: a1 both 1s ease;
+    animation-timeline: view(20% 5%);
+
+}
+@keyframes a1{
+  60% {scale: 100%;
+    transform: translate(0%, 0%);}
+  100% {
+    scale: 70%;
+    transform: translate(0%, 100%);
+
+}
+}
+
+.show2{
+    animation: video1 both 1s ease;
+    animation-timeline: view(20% 5%);
+    
+}
+@keyframes video1{
+  0%{
+    transform: translate(0%, -10%);
+  }
+  50%,55% {
+    transform: translate(0%, 0%);}
+  100%{
+    transform: translate(0%, -30%);
+  }
+}
+
+.showText{
+    animation: a2 both 1s ease;
+    animation-timeline: view(70% 5%);
+}
+@keyframes a2{
+  0% {
+    opacity: 0%;
+    transform: translate(-50%, 0%);}
+  100% {
+    opacity: 100%;
+    transform: translate(0%, 0%);
+
+}
+}
+.showParagraph{
+    animation: a3 both 1s ease;
+    animation-timeline: view(70% 5%);
+    display: block;
+}
+@keyframes a3{
+  0% {
+    opacity: 0%;
+   
+    transform: translate(0%, 100%);}
+  100% {
+    opacity: 100%;
+    
+    transform: translate(0%, 0%);
+
+}
+}
+
+@media (max-width: 768px) {
+.showParagraph{
+    animation: a3 both linear;
+    animation-timeline: view(70% 5%);
+}
+    @keyframes a3{
+  0% {
+    opacity: 0%;
+   
+    transform: translate(0%, 50%);}
+  100% {
+    opacity: 100%;
+    
+    transform: translate(0%, 0%);
+
+}
+}
+  .footer2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #div5 {
+    font-size: 3rem;
+    width: 100%;
+  }
+  #div6 {
+    width: 100%;
+    font-size: 1.5rem;
+    
+  }
+
+  
+
+}
+
+#placeholder1{
+  
+  background-color: rgb(101, 101, 102);
+  height: 600px;
+  width: 700px;
+  align-self: center;
+  border-radius: 30px;
+  margin-left: 50px;
+  
+}
+
+#TextPlaceholder1{
+  background-color: rgb(98, 92, 107);
+  height: 400px;
+  width: 500px;
+   align-self: center;                           
+  align-content: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  
+  
+  
+  
+}
