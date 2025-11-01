@@ -191,6 +191,11 @@ img{
 .show1{
     animation: a1 both 1s ease;
     animation-timeline: view(20% 5%);
+      background-color: rgb(101, 101, 102);
+  height: 100%;
+  width: 100%;
+  
+  border-radius: 30px;
 
 }
 @keyframes a1{
